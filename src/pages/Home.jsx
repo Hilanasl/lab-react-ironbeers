@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <div>
         <img src="./assets/beers.png" alt="beer" />
-        <Link to="/beers">
+        <Link style={{ textDecoration: "none", color: "black" }} to="/beers">
           <h2>All Beers</h2>
         </Link>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
@@ -17,7 +17,10 @@ const Home = () => {
       </div>
       <div>
         <img src="./assets/new-beer.png" alt="random" />
-        <Link to="/random-beer">
+        <Link
+          style={{ textDecoration: "none", color: "black" }}
+          to="/random-beer"
+        >
           <h2>Random Beer</h2>
         </Link>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium
@@ -26,7 +29,7 @@ const Home = () => {
       </div>
       <div>
         <img src="./assets/random-beer.png" alt="new" />
-        <Link to="/new-beer">
+        <Link style={{ textDecoration: "none", color: "black" }} to="/new-beer">
           <h2>New Beer</h2>
         </Link>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, fugiat,

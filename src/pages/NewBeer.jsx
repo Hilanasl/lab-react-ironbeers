@@ -43,11 +43,11 @@ const NewBeer = () => {
   return (
     <>
       <Header />
-      <div className="formContainer">
+      <div>
         <h2>Add a new Beer! 🍺</h2>
         <form onSubmit={handleSubmit}>
           {error !== "" && <p>{error}</p>}
-          <div>
+          <div className="formContainer">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -56,8 +56,6 @@ const NewBeer = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="tagline">Tagline:</label>
             <input
               type="text"
@@ -66,8 +64,6 @@ const NewBeer = () => {
               value={tagline}
               onChange={(e) => setTagline(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="description">Description:</label>
             <textarea
               rows="5"
@@ -77,8 +73,6 @@ const NewBeer = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="firstBrewed">First Brewed:</label>
             <input
               type="text"
@@ -87,8 +81,6 @@ const NewBeer = () => {
               value={firstBrewed}
               onChange={(e) => setFirstBrewed(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="brewersTips">Brewers Tips:</label>
             <input
               type="text"
@@ -97,8 +89,6 @@ const NewBeer = () => {
               value={brewersTips}
               onChange={(e) => setBrewersTips(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="attenuationLevel">Attenuation Level:</label>
             <input
               type="number"
@@ -107,8 +97,6 @@ const NewBeer = () => {
               value={attenuationLevel}
               onChange={(e) => setAttenuationLevel(e.target.value)}
             />
-          </div>
-          <div>
             <label htmlFor="contributedBy">Contributed By:</label>
             <input
               type="text"

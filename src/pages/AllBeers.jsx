@@ -33,7 +33,7 @@ const AllBeers = () => {
     <>
       <Header />
       <SearchBar searchedBeer={searchedBeer} callback={setSearchedBeer} />
-      <h1>Beers List</h1>
+      <h1 className="title">Beers List</h1>
       <div className="container">
         {beers.map((beer) => {
           return (
@@ -42,7 +42,10 @@ const AllBeers = () => {
                 <img className="beerImg" src={beer.image_url} alt={beer.name} />
               </div>
               <div className="infoBlock">
-                <Link className="title" to={beer._id}>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to={beer._id}
+                >
                   <h2>{beer.name}</h2>
                 </Link>
                 <p>{beer.tagline}</p>
