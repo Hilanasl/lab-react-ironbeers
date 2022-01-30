@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  width: 100%;
+  background-color: #3dc4fc;
+}
+
+.navHome {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+.beerImg {
+  width: 15%;
+}
+
+.oneBeerImg {
+  width: 25%;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px grey solid;
+  align-items: center;
+}
